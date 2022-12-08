@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body style="background-image: url(pexels-photo-115045.jpeg) ; background-size: cover;height: 100vh;">
+        <main style="background-color:rgba(169, 169, 169, 0.493); margin: 100px; box-shadow: dodgerblue(63, 113, 163) 5px 5px 10px 5px;padding: 50px 20px;border-radius: 5%;">
+    <h1>Времена года</h1>
+    <div class="clock">
+        <div class="arrow1"></div>
+        <div class="arrow2"></div>
+        <div class="arrow_sec"></div>
+        <div class="point"></div>
+        </div>
+    <ul>
+    <li><a href="zolotaya ocen ochen nuzno.html">Осень</a></li>
+    <li><a href="winter nuzno.html">Зима</a></li>
+    <li><a href="leto nuzno.html">Лето </a></li>
+    </ul>
+    </main>
+    <style>
+        a{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 25px;
+            line-height: 200%;
+        }
+        ul{
+            list-style-type: none;
+            width:fit-content;
+            margin: auto;
+            background-color:white;
+            padding: 50px;
+            margin-top: 20px;
+         }
+        a:nth-child(1){
+            color:gold
+        }
+
+        a:nth-child(2){
+            color:midnightblue
+        }
+    
+        a:nth-child(3){
+            color:rgb(224, 46, 14)
+        }
+        a:hover{background-color:tomato;}
+
+        .clock{
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            border-radius: 50%;
+            position: relative;
+            margin: auto;
+            background-color: cornflowerblue;
+        }
+        .arrow1{
+            width: 45%;
+            height: 10px;
+            background-color: navy;
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            animation:run 3600s linear infinite;
+        }
+        .arrow2 {
+            width: 35%;
+            height: 10px;
+            background-color: navy;
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            animation: run 43200s linear infinite;
+        }
+        .arrow_sec {
+            width: 45%;
+            height: 5px;
+            background-color:steelblue ;
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 2.5px);
+            left: calc(50% - 2.5px);
+            animation: run 60s linear infinite;
+        }
+        .point {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(45, 45, 112);
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+            border-radius: 50%;
+        }
+        @keyframes run{
+            from {transform: rotate(0);}
+            to {transform: rotate(360deg) }
+        }
+
+      </style>
+    </head>
+    <body>
+        
+    </body>
+    
+    
+</body>
+</html>
